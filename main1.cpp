@@ -26,4 +26,3 @@ int main()
 	}
 	printf("%d", max1 - min1);
 }
-
