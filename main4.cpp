@@ -38,16 +38,7 @@ int scmp(const struct Node& a, const struct Node& b, char rl)
 }
 
 int compare(struct Node *p, struct Node *q, char *s, int len)
-{/*
-	int res0,res1,res2;
-	res0=scmp(*p,*q,s[0]);
-	res1=scmp(*p,*q,s[1]);
-	...
-
-
-		return res0==1 ||
-			(res0==0&&res1==1) ||
-			(res0==0&&res1==0&&res2==1);*/
+{
 	int res[3], i;
 	for(i = 0;i < len;i++)
 	{
@@ -232,10 +223,3 @@ void PrintList(struct Node *head)
 		p = p->next;
 	}
 }
-
-
-/*
-2012-01-01 bruce 11
-2012-01-01 bruce 16
-2012-04-01 hahah 12
-*/
